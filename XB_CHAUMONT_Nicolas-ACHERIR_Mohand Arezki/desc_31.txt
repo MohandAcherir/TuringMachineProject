@@ -1,0 +1,73 @@
+name: Result
+init: Q0
+accept: QACCEPT
+
+Q0, 0
+ab1, 0, >
+
+ab1, 0
+qwrite11, 0, <
+
+qwrite11, 0
+qwrite21, 0, >
+
+qwrite21, 0
+check1, 0, >
+
+check1, 0
+Q0, 0, -
+
+check1, 1
+Q0, 1, -
+
+check1, _
+Q0, _, -
+
+ab1, 1
+qwrite12, 1, <
+
+qwrite12, 0
+qwrite22, 0, >
+
+qwrite22, 1
+check2, 1, >
+
+check2, 0
+Q1, 0, -
+
+check2, 1
+Q1, 1, -
+
+check2, _
+Q1, _, -
+
+Q0, _
+ab3, _, >
+
+ab3, _
+qwrite13, _, <
+
+qwrite13, _
+qwrite23, 1, >
+
+qwrite23, _
+check3, 0, >
+
+check3, 0
+qleft13, 0, <
+
+check3, 1
+qleft13, 1, <
+
+check3, _
+qleft13, _, <
+
+qleft13, _
+QACCEPT, _, <
+
+qleft13, 0
+QACCEPT, 0, <
+
+qleft13, 1
+QACCEPT, 1, <
+

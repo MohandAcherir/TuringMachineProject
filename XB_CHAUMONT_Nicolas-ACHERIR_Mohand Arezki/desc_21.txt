@@ -1,0 +1,25 @@
+name: biToSemi
+init: Q0
+accept: QACCEPT
+
+
+Q0, 0
+Q1, 0, <
+
+
+Q0, 1
+Q1, 1, <
+
+Q0, _
+Q1, _, <
+
+
+Q1, _
+Q2, 0, <
+
+Q2, _
+Q3, 1, <
+
+
+Q3, _
+QACCEPT, 1, <

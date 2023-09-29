@@ -1,0 +1,87 @@
+name: shift
+init: Q0
+accept: QACCEPT
+
+Q0, 0
+Qinit, 0, -
+
+Q0, 1
+Qinit, 1, -
+
+Q0, _
+QOU, _, -
+
+Qinit, 0
+QO, S, >
+
+Qinit, 1
+QI, S, >
+
+QINIT, 0
+QO, _, >
+
+QINIT, 1
+QI, _, >
+
+QO, 0
+QO, 0, >
+
+QO, 1
+QI, 0, >
+
+QO, _
+Qleft, 0, <
+
+Qleft, 0
+Qleft, 0, <
+
+Qleft, 1
+Qleft, 1, <
+
+Qleft, _
+Qshift, _, >
+
+Qshift, 0
+QINIT, 0, >
+
+Qshift, 1
+QINIT, 1, >
+
+QI, 0
+QO, 1, >
+
+QI, 1
+QI, 1, >
+
+QI, _
+Qleft, 1, <
+
+qleft, 0
+qleft, 0, <
+
+Qleft, 1
+Qleft, 1, <
+
+Qleft, _
+Qshift, _, >
+
+Qleft, S
+Qshift, S, >
+
+Qinit, _
+QSet, _, <
+
+QINIT, _
+QSet, _, <
+
+QSet, 0
+QSet, 0, <
+
+QSet, 1
+QSet, 1, <
+
+QSet, _
+QSet, _, <
+
+QSet, S
+QACCEPT, S, >

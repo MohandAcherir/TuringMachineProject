@@ -1,0 +1,40 @@
+name: a3b3c3d3
+init: QO
+accept: QWII
+
+
+QO, a
+QI, a, >
+
+QI, a
+QII, a, >
+
+QII, a
+QX, a, >
+
+QX, b
+QV, b, >
+
+QV, b
+QVI, b, >
+
+QVI, b
+QVII, b, >
+
+QVII, c
+QY, c, >
+
+QY, c
+QYI, c, >
+
+QYI, c
+QYII, c, >
+
+QYII, d
+QW, d, >
+
+QW, d
+QWI, d, >
+
+QWI, d
+QWII, d, >
